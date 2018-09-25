@@ -1,5 +1,10 @@
 class Documentos
     attr_accessor :nombre_doc, :paginas, :precio
+    def initialize nombre_doc:, paginas:, precio:
+        @nombre_doc = nombre_doc
+        @paginas = paginas
+        @precio = precio
+    end
 end
 
 class Libro < Documentos
